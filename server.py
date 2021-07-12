@@ -11,10 +11,10 @@ def counter():
     print(session['count'])
     return render_template(("index.html"), count=session['count'])
 
-# @app.route('/destroy_session')
-# def counter():
-
-#     return redirect("/")
+@app.route('/destroy_session')
+def counter_clear():
+    session.clear()
+    return redirect("/")
 
 
 
