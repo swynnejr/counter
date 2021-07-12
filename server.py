@@ -16,7 +16,7 @@ def counter_clear():
     session.clear()
     return redirect("/")
 
-@app.route('/drop-deuce')
+@app.route('/drop_deuce')
 def add_two():
     session['count'] += 1
     return redirect('/')
